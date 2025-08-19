@@ -57,7 +57,7 @@ export default function DigitalPortfolio() {
 								'Planning to pursue an education in Mathematics and Computer Science',
 								'My current dream in life is to be in a position where I can create opportunities for others.',
 							],
-							tech: ['Machine Learning', 'Cybersecurity', 'Software Development', 'Solutions Engineering'],
+							tech: ['Machine Learning', 'Cybersecurity', 'Software Development', 'Solutions Engineering', 'Sales'],
 						},
 						{
 							title: 'Wellness',
