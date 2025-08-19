@@ -88,7 +88,7 @@ export default function DigitalPortfolio() {
 											{project.title === 'Wellness' ? (
 												<div className="flex flex-row items-center gap-4 justify-center">
 													<Image src="/sloth.jpg" alt="Wellness Project" width={400} height={300} className="rounded-lg w-full max-w-md" />
-													<Image src="/fl_studio_logo.png" alt="FL Studio Logo" width={64} height={64} className="rounded-lg" />
+													<Image src="/Fl_studio_logo.png" alt="FL Studio Logo" width={64} height={64} className="rounded-lg" />
 												</div>
 											) : (
 												<ul className="list-disc list-inside space-y-2 text-gray-300">
