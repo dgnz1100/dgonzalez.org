@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://dgonzalez.org'), // Change to your production domain when deploying
-	title: 'Diego Gonzalez - Software Developer',
+	title: 'Diego Gonzalez - Software Developer / Machine Learning',
 	description:
 		'Welcome to my portfolio! I am a passionate backend developer specializing in building scalable server architectures, robust APIs, and high-performance distributed systems. With expertise in cloud infrastructure and database optimization, I create efficient and reliable backend solutions.',
 	keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 	authors: [{ name: 'Diego Gonzalez' }],
 	creator: 'Diego Gonzalez',
 	openGraph: {
-		title: 'Diego Gonzalez - Backend Developer Portfolio',
+		title: 'Diego Gonzalez - Software Development / Machine Learning',
 		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
 		url: 'https://dgonzalez.org',
 		siteName: 'Diego Gonzalez - Portfolio',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: 'Diego Gonzalez - Backend Developer Portfolio',
+				alt: 'Diego Gonzalez - Software Development / Machine Learning Portfolio',
 			},
 		],
 		locale: 'en_US',
