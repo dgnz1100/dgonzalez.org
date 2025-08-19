@@ -60,6 +60,8 @@ export default function ContactSection() {
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 								<motion.a
 									href="https://github.com/dgnz1100"
+									target="_blank"
+									rel="noopener noreferrer"
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -75,6 +77,8 @@ export default function ContactSection() {
 								</motion.a>
 								<motion.a
 									href="https://www.linkedin.com/in/digonzalez11001/"
+									target="_blank"
+									rel="noopener noreferrer"
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -89,10 +93,12 @@ export default function ContactSection() {
 									</div>
 								</motion.a>
 								<motion.a
-													href="https://substack.com/@dgnz1100"
-													whileHover={{ scale: 1.05 }}
-													className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
-												>
+									href="https://substack.com/@dgnz1100"
+									target="_blank"
+									rel="noopener noreferrer"
+									whileHover={{ scale: 1.05 }}
+									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
+								>
 													<div className="p-2 bg-gray-700/50 rounded-lg group-hover:bg-gray-600/50 transition-colors">
 														<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 32 32">
 															<rect x="4" y="8" width="24" height="16" rx="2" />
