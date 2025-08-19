@@ -46,11 +46,12 @@ export default function HeroSection() {
 						<p className="text-gray-400 mb-2">Software Developer / Machine Learning</p>
 						<p className="text-green-500">ping skills</p>
 						<div className="flex flex-wrap gap-2 mt-2">
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Express.js</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Next.js</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Python</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Node.js</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">TensorFlow</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Brain.js</span>
-							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Next.js</span>
+							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">Express.js</span>
 							<span className="px-3 py-1 bg-green-500/10 rounded-md border border-green-500/20">SQL</span>
 						</div>
 					</div>
