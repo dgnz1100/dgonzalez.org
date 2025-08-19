@@ -1,7 +1,7 @@
 'use client';
 
 import HeroSection from './components/HeroSection';
-import SystemArchitecture from './components/DigitalPortfolio';
+// ...existing code...
 import ContactSection from './components/ContactSection';
 import MeddyChatbot from './components/MeddyChatbot';
 import DigitalPortfolio from './components/DigitalPortfolio';

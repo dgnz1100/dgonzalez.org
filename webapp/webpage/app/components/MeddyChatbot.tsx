@@ -78,7 +78,7 @@ const ChatbotWidget: React.FC = () => {
           content: reply,
         },
       ]);
-    } catch (err: any) {
+  } catch (err: unknown) {
       setMessages(prev => [
         ...prev,
         {
