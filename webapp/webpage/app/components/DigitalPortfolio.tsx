@@ -63,7 +63,7 @@ export default function DigitalPortfolio() {
 						},
 						{
 							title: 'Wellness',
-							description: 'Developed and deployed machine learning models for predictive analytics',
+							description: '"Wellness is a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity." - World Health Organization',
 							details: [
 								'Implemented feature engineering and data preprocessing pipelines',
 								'Trained and optimized models using TensorFlow and PyTorch',
