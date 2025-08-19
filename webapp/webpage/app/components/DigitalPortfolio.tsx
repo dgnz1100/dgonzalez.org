@@ -70,7 +70,7 @@ export default function DigitalPortfolio() {
 								'Deployed models as REST APIs using FastAPI',
 								'Monitored model performance and retrained as necessary',
 							],
-							tech: ['Faith', 'Family', 'Music', 'Time Management'],
+							tech: ['Faith', 'Family', 'Soccer', 'Billiards', 'Music', 'Time Management'],
 						},
 					].map((project, index) => (
 						<motion.div
@@ -86,7 +86,10 @@ export default function DigitalPortfolio() {
 										<div className="mb-6">
 											<h4 className="text-lg font-semibold mb-2">Key Achievements:</h4>
 											{project.title === 'Wellness' ? (
-												<Image src="/sloth.jpg" alt="Wellness Project" width={400} height={300} className="rounded-lg w-full max-w-md mx-auto" />
+												<div className="flex flex-row items-center gap-4 justify-center">
+													<Image src="/sloth.jpg" alt="Wellness Project" width={400} height={300} className="rounded-lg w-full max-w-md" />
+													<Image src="/fl_studio_logo.png" alt="FL Studio Logo" width={64} height={64} className="rounded-lg" />
+												</div>
 											) : (
 												<ul className="list-disc list-inside space-y-2 text-gray-300">
 													{project.details.map((detail, i) => (
