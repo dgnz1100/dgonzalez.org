@@ -1,8 +1,23 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
 export default function HeroSection() {
+	// Typing effect for name
+	const fullName = "Diego Gonzalez";
+	const [typedName, setTypedName] = useState("");
+
+	useEffect(() => {
+		let i = 0;
+		const interval = setInterval(() => {
+			setTypedName(fullName.slice(0, i + 1));
+			i++;
+			if (i === fullName.length) clearInterval(interval);
+		}, 120);
+		return () => clearInterval(interval);
+	}, []);
+
 	return (
 		<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
 			<div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-blue-600/20 opacity-10" />
@@ -24,7 +39,10 @@ export default function HeroSection() {
 					</div>
 					<div className="font-mono">
 						<p className="text-green-500">ping whoami</p>
-						<h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">Diego Gonzalez</h1>
+						<h1 className="text-4xl md:text-5xl font-bold mt-2 mb-4">
+							{typedName}
+							<span className="animate-pulse">|</span>
+						</h1>
 						<p className="text-gray-400 mb-2">Software Developer / Machine Learning</p>
 						<p className="text-green-500">ping skills</p>
 						<div className="flex flex-wrap gap-2 mt-2">
