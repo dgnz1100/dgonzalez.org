@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import '../globals.css';
 import React, { useEffect, useRef, useState } from "react";
+import Image from 'next/image';
 import axios from "axios";
 // Use public path for Meddy icon
 
@@ -78,7 +79,7 @@ const ChatbotWidget: React.FC = () => {
           content: reply,
         },
       ]);
-  } catch (err: unknown) {
+  } catch {
       setMessages(prev => [
         ...prev,
         {
@@ -109,7 +110,7 @@ const ChatbotWidget: React.FC = () => {
         animate={isOpen ? { scale: 0.95 } : { scale: 1 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
-        <img src="/meddy.svg" alt="Meddy AI icon" className="chatbot-toggle-avatar" />
+  <Image src="/meddy.svg" alt="Meddy AI icon" width={40} height={40} className="chatbot-toggle-avatar" />
       </motion.button>
 
       <motion.div
@@ -123,7 +124,7 @@ const ChatbotWidget: React.FC = () => {
           <div className="chatbot-popup">
             <div className="chatbot-header">
               <div className="chatbot-header-info">
-                <img src="/meddy.svg" alt="Meddy Logo" className="chatbot-header-icon" />
+                <Image src="/meddy.svg" alt="Meddy Logo" width={32} height={32} className="chatbot-header-icon" />
                 <h2 className="chatbot-title">{title}</h2>
               </div>
               <button
@@ -140,7 +141,7 @@ const ChatbotWidget: React.FC = () => {
                   className={`chatbot-message-row ${msg.role === "user" ? "chatbot-message-user" : "chatbot-message-assistant"}`}
                 >
                   {msg.role === "assistant" && (
-                    <img src="/meddy.svg" alt="Meddy Logo" className="chatbot-message-icon" />
+                    <Image src="/meddy.svg" alt="Meddy Logo" width={24} height={24} className="chatbot-message-icon" />
                   )}
                   <div
                     className={`chatbot-message-bubble ${msg.role === "user"
@@ -154,7 +155,7 @@ const ChatbotWidget: React.FC = () => {
               ))}
               {loading && (
                 <div className="chatbot-message-row chatbot-message-assistant">
-                  <img src="/meddy.svg" alt="Meddy Logo" className="chatbot-message-icon" />
+                  <Image src="/meddy.svg" alt="Meddy Logo" width={24} height={24} className="chatbot-message-icon" />
                   <div className="chatbot-message-bubble chatbot-message-assistant-bubble">
                     Thinking...
                   </div>

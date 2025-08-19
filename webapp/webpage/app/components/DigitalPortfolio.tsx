@@ -1,4 +1,6 @@
+
 'use client';
+import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
@@ -84,7 +86,7 @@ export default function DigitalPortfolio() {
 										<div className="mb-6">
 											<h4 className="text-lg font-semibold mb-2">Key Achievements:</h4>
 											{project.title === 'Wellness' ? (
-												<img src="/sloth.jpg" alt="Wellness Project" className="rounded-lg w-full max-w-md mx-auto" />
+												<Image src="/sloth.jpg" alt="Wellness Project" width={400} height={300} className="rounded-lg w-full max-w-md mx-auto" />
 											) : (
 												<ul className="list-disc list-inside space-y-2 text-gray-300">
 													{project.details.map((detail, i) => (
